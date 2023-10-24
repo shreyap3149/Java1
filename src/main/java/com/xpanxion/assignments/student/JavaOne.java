@@ -79,6 +79,20 @@ public class JavaOne {
         System.out.print("Enter a String: ");
         String statement = scan.nextLine();
 
+        int length = statement.length();
+        boolean check = true;
+
+        for(int i=0; i<(length/2); i++){
+            if(statement.charAt(i) != statement.charAt(length-i-1)){
+                check = false;
+            }
+        }
+
+        if(check==true){
+            System.out.println("YES");
+        }else{
+            System.out.println("NO");
+
     }
 
     public void ex5() {
