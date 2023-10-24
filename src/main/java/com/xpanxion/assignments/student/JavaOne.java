@@ -1,5 +1,6 @@
 package com.xpanxion.assignments.student;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class JavaOne {
 
@@ -43,11 +44,41 @@ public class JavaOne {
     }
 
     public void ex3() {
-        System.out.println("Student 1: ex3.");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String statement = scan.nextLine();
+        String[] arrofStr = statement.split(" ");
+
+       // String[] result = new String[];
+        StringBuilder result = new StringBuilder();
+
+
+        for(int i =0; i< arrofStr.length; i++){
+            if(i%2 ==0){
+                result.append(arrofStr[i].toUpperCase());
+                result.append(" ");
+            }else{
+                result.append(arrofStr[i]);
+                result.append(" ");
+            }
+
+          //  if(i)
+        }
+        System.out.println(result.toString());
+
+
+      /*  for(String a: arrofStr ){
+            if(a.indexOf(0))
+            System.out.println(a);
+        }*/
+
     }
 
     public void ex4() {
-        System.out.println("Student 1: ex4.");
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String statement = scan.nextLine();
+
     }
 
     public void ex5() {
